@@ -1,0 +1,43 @@
+
+/* Navbar */
+.navbar > .navbar-brand, div.collapse .navbar-nav li.nav-item a.nav-link {
+  color: rgb(85, 92, 212);
+  font-weight: 700;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+
+/* Title */
+#title {
+  background-color: #fdf8d6;
+}
+
+.app-img {
+  width: 200px;
+  padding: 20px;
+}
+
+
+/* Service */
+.collab {
+  width: 450px;
+}
+
+
+/* Press */
+.brand-logo {
+  width: 250px;
+}
+
+
+/* Footer */
+.credit {
+  color: gray;
+}
+
+.credit:hover {
+  color:rgb(85, 92, 212);
+}
