@@ -5,21 +5,135 @@
   font-weight: 700;
 }
 
-.navbar-brand {
+.navbar > .navbar-brand {
   margin-left: 20px;
+  font-family: 'Archivo Black';
+  color:rgb(110, 91, 255);
+}
+
+/* Behind Background - Blur */
+#blur-background {
+
+  z-index: 0;
+  position: relative;
+  border-radius: 50%;
+  filter: blur(100px);
+
+}
+
+.pink {
+  background-color: rgb(247, 170, 255);
+  top: 50px;
+  left: 300px;
+  width: 200px;
+  height: 200px;
+}
+
+.blue {
+  background-color: rgba(183, 176, 255, 0.429);
+  top: 240px;
+  right: 100px;
+  width: 190px;
+  height: 190px;
+}
+
+.aqua {
+  background-color: rgba(157, 253, 255, 0.755);
+  bottom: 240px;
+  left: 100px;
+  width: 190px;
+  height: 190px;
 }
 
 
 /* Title */
 #title {
-  background-color: #fdf8d6;
+  background-color: #fdf8d6ed;
+  z-index: 1;
+}
+
+.title-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.title-container {
+  position: absolute;
+  background-color: rgba(255, 255, 250, 0.952);
+  width: 90%;
+  box-shadow: rgba(192, 192, 194, 0.199) 0px 7px 29px 0px;
+}
+
+/* Font */
+
+* {
+  font-family: 'Lora';
+}
+
+.main-title, .even-trade-title {
+  font-family: 'Archivo Black';
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.even-trade-title {
+  color:rgb(123, 102, 255);
+  border-bottom: 10px solid #3fd5ff00;
+}
+
+.div-main-title:hover > .even-trade-title {
+  transition: all ease-in 2s;
+  border-bottom: 10px solid #26f1ff;
+
+}
+
+.img-background {
+  position: relative;
+  width: 160px;
+  height: 295px;
+  background-color: rgba(215, 219, 254, 0.614);
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: rgba(38, 38, 45, 0.349) 0px 7px 29px 0px;
+}
+
+.phone-img {
+  display: flex;
+  padding: 20px;
 }
 
 .app-img {
   width: 200px;
   padding: 20px;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.55;
 }
 
+
+.app-img:hover {
+  transform: translate(-20px, 20px);
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+
+.app-img:hover ~ .img-background {
+  transition: all ease-in-out 1s;
+  box-shadow: rgb(255, 255, 255) 0px 20px 29px 0px;
+}
+
+/* Features */
+
+#features {
+  z-index: 2;
+}
+
+.feature-title {
+  font-weight: 700;
+}
 
 /* Service */
 .collab {

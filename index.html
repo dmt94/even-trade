@@ -9,69 +9,111 @@
     rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Changa+One:ital@0;1&family=Cinzel:wght@500;700;800&family=Domine:wght@400;500&family=Lemon&family=Lora:wght@500&family=Source+Serif+Pro:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">Even Trade</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Download</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
   <section id="title">
 
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="">Even Trade</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-
-
     <!-- Title -->
+    <div class="title-wrap">
+      <div class="title-container">
 
-    <div>
-      <h1>Use your skills as currency with Even Trade</h1>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
-    </div>
-    <div>
-      <img src="images/appmock-up.png" alt="iphone-mockup" class="app-img">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="div-main-title">
+              <h1 class="main-title">Use your skills as currency with</h1>
+              <span class="even-trade-title">Even Trade</span>
+            </div>
+            <button type="button">Download</button>
+            <button type="button">Download</button>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="phone-img">
+              <img src="images/appmock-up.png" alt="iphone-mockup"
+                class="app-img">
+              <div class="img-background"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
   </section>
 
+  <div class="row">
+    <div class="col-lg-4">
+      <section id="blur-background" class="pink">
+      </section>
+    </div>
+    <div class="col-lg-4">
+      <section id="blur-background" class="blue">
+      </section>
+    </div>
+    <div class="col-lg-4">
+      <section id="blur-background" class="aqua">
+      </section>
+    </div>
+  </div>
+
+
+
+  </section>
 
   <!-- Features -->
 
   <section id="features">
 
-    <h3>Connection</h3>
+    <h3 class="feature-title">Connection</h3>
     <p>Every member is confirmed to have the skills you need. Take a chance,
       make fair exchanges and communicate.</p>
 
-    <h3>Trust</h3>
+    <h3 class="feature-title">Trust</h3>
     <p>Members are given a satisfactory exchange rating.</p>
 
-    <h3>Local</h3>
+    <h3 class="feature-title">Local</h3>
     <p>Find people in your area who have the expertise you need.</p>
 
-    <h3>Vetted Professions</h3>
+    <h3 class="feature-title">Vetted Professions</h3>
     <p>Members have access to other profession-approved members.</p>
 
   </section>
@@ -148,7 +190,8 @@
   <!-- Footer -->
 
   <footer id="footer">
-    <a href="https://www.freepik.com/vectors/team-collaboration" class="credit">Team
+    <a href="https://www.freepik.com/vectors/team-collaboration"
+      class="credit">Team
       collaboration vector created by vectorjuice - www.freepik.com</a>
 
     <p>© Copyright Even Trade</p>
