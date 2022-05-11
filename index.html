@@ -24,8 +24,10 @@
 
 
   <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="/images/logo.png" alt="even trade logo" class="logo">
     <a class="navbar-brand" href="">Even Trade</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,9 +48,26 @@
         </li>
       </ul>
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <img src="/images/logo.png" alt="even trade logo" class="logo">
+      <a class="navbar-brand" href="#" class="navbar-brand">EvenTrade</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Download</a>
+        </div>
+      </div>
+    </div>
   </nav>
-
-
+  
   <section id="title">
 
     <!-- Title -->
@@ -56,43 +75,104 @@
       <div class="title-container">
 
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-4 main-title-with-buttons">
             <div class="div-main-title">
               <h1 class="main-title">Use your skills as currency with</h1>
               <span class="even-trade-title">Even Trade</span>
             </div>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+            <button type="button" class="first-btn">More Info</button>
+            <button type="button" class="sec-btn">Download</button>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-4 mobile">
             <div class="phone-img">
               <img src="images/appmock-up.png" alt="iphone-mockup"
                 class="app-img">
               <div class="img-background"></div>
             </div>
+            <div class="mobile-p">
+              <span class="mobil-p-first mobile-span">Connect.</span>
+              <span class="mobil-p-sec mobile-span">Build Skills.</span>
+              <span class="mobil-p-third mobile-span">Professional.</span>
+              <span class="mobil-p-fourth mobile-span">Build.</span>
+              <span class="mobil-p-fifth mobile-span">Earn Crystals.</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 testimonial-col">
+            <div class="abstract-testimonial">
+              <div class="testimonial">
+                <div class="chat">
+                  <div class="profile">
+                    <img src="/images/icons/aqua.png" alt="" class="gems">
+                  </div>
+                  <div class="profile-span">
+                    <span class="chat-span">Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit.</span>
+                  </div>
+                </div>
+                <div class="chat chat-2">
+                  <div class="profile profile-2">
+                    <img src="/images/icons/purple.png" alt="" class="gems">
+                  </div>
+                  <div class="profile-span">
+                    <span class="chat-span">Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit.</span>
+                  </div>
+                </div>
+                <div class="chat chat-3">
+                  <div class="profile profile-3">
+                    <img src="/images/icons/pink.png" alt="" class="gems">
+                  </div>
+                  <div class="profile-span">
+                    <span class="chat-span">Lorem ipsum dolor sit amet
+                      consectetur
+                      adipisicing elit.</span>
+                  </div>
+                </div>
+                <div class="abstract-shape"></div>
+                <div class="abstract-shape abs-sh-2"></div>
+                <div class="abstract-shape abs-sh-2 shape-3"></div>
+                <div class="abstract-shape abs-sh-2 shape-4"></div>
+                <div class="title-details">
+                  <img src="images/abstract/5446961.png" alt=""
+                    class="abstract-art-1-bg">
+                </div>
+              </div>
+              <!-- <img src="images/appmock-up.png" alt="iphone-mockup"
+                class="app-img testimonial"> -->
+
+            </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
 
   </section>
 
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-3">
       <section id="blur-background" class="pink">
       </section>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
+      <section id="abstract-1">
+        <img src="/images/abstract/6009912.png" alt="abstract art"
+          class="abstract-art-2-bg">
+      </section>
+    </div>
+    <div class="col-lg-3">
       <section id="blur-background" class="blue">
       </section>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-3">
       <section id="blur-background" class="aqua">
       </section>
     </div>
+
   </div>
 
 
@@ -198,6 +278,10 @@
 
   </footer>
 
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </body>
 
