@@ -10,11 +10,8 @@ body {
   color: black;
 }
 
-.navbar > .container-fluid > .navbar-collapse {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
+/* .navbar > .container-fluid > .navbar-collapse {
+} */
 
 .navbar > .container-fluid > .navbar-collapse > .navbar-nav > a.nav-link {
   color: rgb(95, 100, 105);
@@ -24,7 +21,6 @@ body {
 }
 
 .navbar > .container-fluid > .navbar-collapse > .navbar-nav > a.nav-link:hover {
-  /* border-bottom: 5px solid rgb(233, 163, 233); */
   color: rgb(251, 124, 251);
 }
 
@@ -137,24 +133,50 @@ body {
 }
 
 .main-title-with-buttons {
-  padding: 50px;
+  padding: 20px;
+}
+
+.div-main-title {
+  margin: 20px;
+}
+
+/* buttons */
+
+.div-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .first-btn, .sec-btn {
-  background-color: rgb(235, 123, 235);
   color: white;
   box-shadow: rgba(138, 138, 138, 0.27) 0px 7px 29px 0px;
   border: none;
-  margin-right: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 15px;
-  border-radius: 7px;
+  border-radius: 50px;
+  margin: 20px;
+  width: 200px;
+}
+
+.first-btn {
+  background-color: rgb(235, 123, 235);
+}
+
+.sec-btn {
+  background-color: rgb(157, 118, 243);
 }
 
 .first-btn:hover, .sec-btn:hover {
-  background-color: rgba(175, 183, 255, 0.622);
+  background-color: rgba(175, 183, 255, 0.16);
   color: black;
-  transition: all ease-in-out 1s;
+  transition: all linear 1s;
+  box-shadow: rgba(70, 70, 70, 0.719) 0px 7px 29px 0px;
+  border: 1px solid white;
+}
+
+.fa-apple, .fa-google-play {
+  margin-right: 10px;
 }
 
 /* Font */
@@ -163,22 +185,37 @@ body {
   font-family: 'Lora';
 }
 
+
+
 .main-title, .even-trade-title {
   font-family: 'Archivo Black';
-  font-size: 50px;
-  margin: 0;
+  font-size: 40px;
   padding: 0;
+  text-align: center;
+}
+
+.main-title {
+  margin: 5px;
 }
 
 .even-trade-title {
   color:rgb(123, 102, 255);
   border-bottom: 10px solid #3fd5ff00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.div-main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .div-main-title:hover > .even-trade-title {
   transition: all ease-in 2s;
   border-bottom: 10px solid #26f1ff;
-
+  cursor: pointer;
 }
 
 .img-background {
@@ -219,7 +256,7 @@ body {
 
 .mobile {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   /* padding: 55px; */
 }
@@ -434,7 +471,7 @@ body {
 .chat:hover {
   box-shadow: rgba(255, 255, 255, 0.72) 0px 7px 29px 0px;
   transition: all 2s ease-in-out;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .chat:hover > .profile {
