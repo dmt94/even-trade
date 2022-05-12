@@ -177,7 +177,7 @@ body {
   flex-direction: column;
 }
 
-.first-btn, .sec-btn {
+.first-btn, .sec-btn, .price-tier-card > button {
   color: white;
   box-shadow: rgba(138, 138, 138, 0.27) 0px 7px 29px 0px;
   border: none;
@@ -545,7 +545,7 @@ a {
 
 .feature-title > h3 {
   font-family: 'Archivo Black';
-  font-size: 45px;
+  font-size: 35px;
   color:rgba(110, 91, 255, 0.732);
 }
 
@@ -638,15 +638,14 @@ a {
   0 0 20px 10px rgba(226, 212, 249, 0.867), /* middle */
   0 0 20px 10px rgba(254, 254, 255, 0.167); /* outer */
   transition: all 1s ease-in-out;
-
 }
 
 /* Service */
 
 .service-div {
   background-color: rgb(255, 253, 251);
-
   width: 80%;
+  border: 1px solid black;
 }
 
 #service {
@@ -660,7 +659,7 @@ a {
 #service > h2 {
   text-align: center;
   font-size: 40px;
-  font-family: 'Domine';
+  font-family: 'Archivo Black';
 }
 
 #service > p {
@@ -676,7 +675,7 @@ a {
 
 /* Press */
 
-.press-div {
+.press-div, .price-div, .cta-div, .footer-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -731,17 +730,160 @@ a {
   background-color: rgba(255, 251, 251, 0.533);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-  box-shadow: rgba(127, 127, 127, 0.27) 0px 7px 29px 0px;
+  box-shadow: rgba(234, 228, 212, 0.912) 0px 7px 29px 0px;
 }
 
 .logo-glass:hover {
   z-index: 10;
   cursor: pointer;
-  transition: all 2s ease-in;
+  transition: all 1s linear;
+  box-shadow:
+  0 0 30px 30px rgba(255, 254, 251, 0.234),  /* inner  */
+  0 0 10px 10px rgba(248, 245, 225, 0.867), /* middle */
+  0 0 20px 10px rgba(199, 199, 252, 0.068); /* outer */
 
 }
 
+/* Pricing */
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#id-price-div {
+  width: 90%;
+}
+
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.pricing-header > p {
+  font-size: 20px;
+  color: rgb(72, 71, 75);
+}
+
+.pricing-header > h2 {
+  font-family: 'Archivo Black';
+  font-size: 50px;
+}
+
+.price-tier-card {
+  box-shadow:
+  0 0 30px 30px rgba(255, 254, 251, 0.234),  /* inner  */
+  0 0 10px 10px rgba(251, 246, 222, 0.867), /* middle */
+  0 0 20px 10px rgba(199, 199, 252, 0.068); /* outer */
+  
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 350px;
+}
+
+.price-tier-card > h3 {
+  margin: 20px;
+  font-size: 40px;
+  color: rgb(52, 50, 50);
+  text-align: center;
+  font-weight: 800;
+}
+
+.price-tier-card > p {
+  margin: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+}
+
+.price-tier-card > h2 {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.price-tier-card button {
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  background-color: rgba(255, 251, 251, 0.916);
+  border-radius: 40px;
+  
+  box-shadow: rgba(164, 153, 132, 0.306) 0px 7px 29px 0px;
+  margin-bottom: 20px;
+  color: black;
+  
+}
+
+.pricing-citrine > button:hover {
+  background-color: rgba(51, 51, 225, 0.939);
+  color: white;
+  transition: all 500ms linear;
+}
+
+.pricing-citrine {
+  background-color: rgba(253, 249, 124, 0.773);
+}
+
+.pricing-citrine > button {
+  background-color: rgba(238, 186, 55, 0.773);
+}
+
+.pricing-quartz {
+  background-color: rgba(255, 255, 255, 0.916);
+}
+
+.pricing-quartz > button {
+  border: 1px solid black;
+}
+
+.pricing-quartz > button:hover {
+  background-color: rgb(81, 81, 81);
+  color: white;
+  transition: all 500ms linear;
+}
+
+.pricing-amethyst {
+  background-color: rgba(210, 186, 255, 0.773);
+}
+
+.pricing-amethyst > button {
+  background-color: rgb(190, 144, 255);
+}
+
+.pricing-amethyst > button:hover {
+  background-color: rgb(136, 111, 228);
+  color: white;
+  transition: all 500ms linear;
+}
+
+/* call to action */
+.cta-div {
+  margin: 30px;
+}
+
+#cta {
+  display: flex;
+  flex-direction: column;
+}
+
+#cta .cta-buttons {
+  flex-direction: row;
+}
+
 /* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .credit {
   color: gray;
 }
