@@ -10,6 +10,7 @@
     rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +22,14 @@
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/0b28f0a5b2.js"
     crossorigin="anonymous"></script>
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Animation -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -30,15 +37,18 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <img src="/images/logo.png" alt="even trade logo" class="logo">
-      <a class="navbar-brand" href="#" class="navbar-brand">EvenTrade</a>
+      <div class="logo">
+        <img src="/images/logo.png" alt="even trade logo" class="et-logo">
+        <a class="navbar-brand" href="#">EvenTrade</a>
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav" id="id-navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#">Features</a>
           <a class="nav-link" href="#">Pricing</a>
@@ -48,211 +58,327 @@
     </div>
   </nav>
 
-  <section id="title">
+  <div class="row main-container container-fluid">
+    <div class="col-lg-12">
 
-    <!-- Title -->
-    <div class="title-wrap">
-      <div class="title-container container-fluid">
-        <div class="row">
-          <div class="col-lg-5 main-title-with-buttons">
-            <div class="div-main-title">
-              <h1 class="main-title">Use your skills as currency with</h1>
-              <span class="even-trade-title">Even Trade</span>
-              <div class="div-buttons">
-                <button type="button" class="first-btn"><i class="fa-brands fa-apple fa-xl"></i>Download</button>
-                <button type="button" class="sec-btn"><i class="fa-brands fa-google-play fa-xl"></i>Download</button>
+      <!-- blur with heart -->
+      <div class="row blur-row">
+        <div class="col-lg-3">
+          <section id="blur-background" class="pink">
+          </section>
+        </div>
+        <div class="col-lg-2">
+          <section id="abstract-1">
+            <img src="/images/abstract/6009912.png" alt="abstract art"
+              class="abstract-art-2-bg animate__animated animate__pulse animate__infinite">
+          </section>
+        </div>
+        <div class="col-lg-3">
+          <section id="blur-background" class="blue">
+          </section>
+        </div>
+        <div class="col-lg-3">
+          <section id="blur-background" class="aqua">
+          </section>
+        </div>
+
+      </div>
+
+      </section>
+    </div>
+
+
+    <!-- main-heading and features -->
+    <div class="col-lg-12">
+      <!-- Title -->
+      <section id="title">
+
+        <div class="title-wrap">
+
+          <!-- main-heading -->
+          <div class="title-container container-fluid">
+            <div class="row">
+              <div class="col-lg-5 main-title-with-buttons">
+                <div class="div-main-title">
+                  <h1 class="main-title">Use your skills as currency with</h1>
+                  <span class="even-trade-title">Even Trade</span>
+                  <div class="div-buttons">
+                    <button type="button" class="first-btn"><i
+                        class="fa-brands fa-apple fa-xl"></i>Download</button>
+                    <button type="button" class="sec-btn"><i
+                        class="fa-brands fa-google-play fa-xl"></i>Download</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-3 mobile">
+                <div class="phone-img">
+                  <img src="images/appmock-up.png" alt="iphone-mockup"
+                    class="app-img">
+                  <div class="img-background"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 testimonial-col">
+                <div class="abstract-testimonial">
+                  <div class="testimonial">
+                    <div class="chat">
+                      <div class="profile">
+                        <img src="/images/icons/aqua.png" alt="" class="gems">
+                      </div>
+                      <div class="profile-span">
+                        <span class="chat-span">Lorem ipsum dolor sit amet
+                          consectetur
+                          adipisicing elit.</span>
+                      </div>
+                    </div>
+                    <div class="chat chat-2">
+                      <div class="profile profile-2">
+                        <img src="/images/icons/purple.png" alt="" class="gems">
+                      </div>
+                      <div class="profile-span">
+                        <span class="chat-span">Lorem ipsum dolor sit amet
+                          consectetur
+                          adipisicing elit.</span>
+                      </div>
+                    </div>
+                    <div class="chat chat-3">
+                      <div class="profile profile-3">
+                        <img src="/images/icons/pink.png" alt="" class="gems">
+                      </div>
+                      <div class="profile-span">
+                        <span class="chat-span">Lorem ipsum dolor sit amet
+                          consectetur
+                          adipisicing elit.</span>
+                      </div>
+                    </div>
+                    <div class="abstract-shape"></div>
+                    <div class="abstract-shape abs-sh-2"></div>
+                    <div class="abstract-shape abs-sh-2 shape-3"></div>
+                    <div class="abstract-shape abs-sh-2 shape-4"></div>
+                    <div class="title-details">
+                      <img src="images/abstract/5446961.png" alt=""
+                        class="abstract-art-1-bg">
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
 
             </div>
 
-          </div>
+            <!-- features -->
+            <section id="features" class="container-fluid">
+              <div class="row feature-row">
+                <div class="col-lg-6" feature-title-card-col>
 
-          <div class="col-lg-3 mobile">
-            <div class="phone-img">
-              <img src="images/appmock-up.png" alt="iphone-mockup"
-                class="app-img">
-              <div class="img-background"></div>
-            </div>
-          </div>
+                  <!-- connections card -->
+                  <div class="feature-card-bg">
+                    <div class="feature-card connections-card">
+                      <div class="feature-title">
+                        <h3 class="feature-title">Connection</h3>
+                      </div>
+                      <div class="feature-descr">
+                        <img src="/images/icons/455691.png" alt=""
+                          class="img-feature">
+                        <p>Every member is is guaranteed to have the skills you
+                          need.</p>
+                      </div>
+                    </div>
+                  </div>
 
-          <div class="col-lg-4 testimonial-col">
-            <div class="abstract-testimonial">
-              <div class="testimonial">
-                <div class="chat">
-                  <div class="profile">
-                    <img src="/images/icons/aqua.png" alt="" class="gems">
-                  </div>
-                  <div class="profile-span">
-                    <span class="chat-span">Lorem ipsum dolor sit amet
-                      consectetur
-                      adipisicing elit.</span>
+                </div>
+                <div class="col-lg-6" feature-title-card-col>
+
+                  <!-- trust card -->
+                  <div class="feature-card-bg">
+
+                    <div class="feature-card trust-card">
+                      <div class="feature-title">
+                        <h3>Trust</h3>
+                      </div>
+                      <div class="feature-descr">
+                        <img src="/images/icons/1692130.png" alt=""
+                          class="img-feature">
+                        <p>Members are given a satisfactory exchange rating.</p>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
-                <div class="chat chat-2">
-                  <div class="profile profile-2">
-                    <img src="/images/icons/purple.png" alt="" class="gems">
-                  </div>
-                  <div class="profile-span">
-                    <span class="chat-span">Lorem ipsum dolor sit amet
-                      consectetur
-                      adipisicing elit.</span>
+
+                <!-- local card -->
+
+                <div class="col-lg-6" feature-title-card-col>
+                  <div class="feature-card-bg">
+                    <div class="feature-card local-card">
+                      <div class="feature-title">
+                        <h3 class="feature-title">Local</h3>
+                      </div>
+
+                      <div class="feature-descr">
+                        <img src="/images/icons/4240629.png" alt=""
+                          class="img-feature">
+                        <p>Find people in your area who have the expertise you
+                          need.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="chat chat-3">
-                  <div class="profile profile-3">
-                    <img src="/images/icons/pink.png" alt="" class="gems">
+
+                <!-- professions card -->
+                <div class="col-lg-6" feature-title-card-col>
+                  <div class="feature-card-bg">
+                    <div class="feature-card professions-card">
+                      <div class="feature-title">
+                        <h3 class="feature-title title-prof">Vetted Professions
+                        </h3>
+                      </div>
+
+                      <div class="feature-descr">
+                        <img src="/images/icons/1283280.png" alt=""
+                          class="img-feature">
+                        <p>Members have access to other profession-approved
+                          members.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="profile-span">
-                    <span class="chat-span">Lorem ipsum dolor sit amet
-                      consectetur
-                      adipisicing elit.</span>
-                  </div>
-                </div>
-                <div class="abstract-shape"></div>
-                <div class="abstract-shape abs-sh-2"></div>
-                <div class="abstract-shape abs-sh-2 shape-3"></div>
-                <div class="abstract-shape abs-sh-2 shape-4"></div>
-                <div class="title-details">
-                  <img src="images/abstract/5446961.png" alt=""
-                    class="abstract-art-1-bg">
                 </div>
               </div>
-              <!-- <img src="images/appmock-up.png" alt="iphone-mockup"
-                class="app-img testimonial"> -->
-
-            </div>
-
+            </section>
           </div>
 
         </div>
-      </div>
+      </section>
+    </div>
 
-  </section>
 
-  <div class="row">
-    <div class="col-lg-3">
-      <section id="blur-background" class="pink">
+    <!-- service -->
+    <div class="col-lg-12 service-div">
+
+      <section id="service">
+
+        <h2>Find people with your ideal professions and experience around
+          your
+          area</h2>
+        <p> Take a chance, make fair exchanges, and communicate.</p>
+        <img src="images/collab.png" alt="collab" class="collab">
+
+      </section>
+
+    </div>
+
+
+    <!-- press -->
+
+    <div class="col-lg-12 press-div">
+
+      <!-- Press -->
+
+      <section id="press" class="row">
+        <div class="logo-span">
+          <span>Trusted and Professional</span>
+        </div>
+        <div class="col-lg-3 logo-col">
+          <div class="logo-glass">
+            <img src="images/techcrunch.png" alt="tc-logo" class="brand-logo">
+          </div>
+
+        </div>
+        <div class="col-lg-3 logo-col">
+          <div class="logo-glass">
+            <img src="images/tnw.png" alt="tnw-logo" class="brand-logo">
+          </div>
+        </div>
+
+        <div class="col-lg-3 logo-col">
+          <div class="logo-glass">
+            <img src="images/bizinsider.png" alt="biz-insider-logo"
+              class="brand-logo">
+          </div>
+
+        </div>
+        <div class="col-lg-3 logo-col">
+          <div class="logo-glass">
+            <img src="images/mashable.png" alt="mashable-logo"
+              class="brand-logo">
+          </div>
+
+        </div>
       </section>
     </div>
-    <div class="col-lg-3">
-      <section id="abstract-1">
-        <img src="/images/abstract/6009912.png" alt="abstract art"
-          class="abstract-art-2-bg">
+
+    <!-- pricing -->
+
+    <div class="col-lg-12">
+      <!-- Pricing -->
+
+      <section id="pricing">
+
+        <h2>Affordable Pricing</h2>
+        <p>Simple and affordable price plans for your exchange</p>
+
+
+        <h3>Citrine Level</h3>
+        <h2>Free</h2>
+        <p>3 Trades Per Day</p>
+        <button type="button">Sign Up</button>
+
+
+        <h3>Quartz Level</h3>
+        <h2>$15 / mo</h2>
+        <p>Unlimited Trade</p>
+        <p>Unlimited Messages</p>
+        <button type="button">Sign Up</button>
+
+
+        <h3>Amethyst Level</h3>
+        <h2>$20 / mo</h2>
+        <p>Gold-standard Priority Listing</p>
+        <p>Unlimited Trade</p>
+        <p>Unlimited Messages</p>
+        <button type="button">Sign Up</button>
+
       </section>
     </div>
-    <div class="col-lg-3">
-      <section id="blur-background" class="blue">
+
+    <!-- call to action -->
+
+    <div class="col-lg-12">
+
+      <!-- Call to Action -->
+
+      <section id="cta">
+
+        <h3>Because your talents deserve a fair trade.</h3>
+        <button type="button"></button>
+        <button type="button">Download</button>
+
       </section>
     </div>
-    <div class="col-lg-3">
-      <section id="blur-background" class="aqua">
-      </section>
+
+    <!-- footer -->
+
+    <div class="col-lg-12">
+      <!-- Footer -->
+
+      <footer id="footer">
+        <a href="https://www.freepik.com/vectors/team-collaboration"
+          class="credit">Team
+          collaboration vector created by vectorjuice - www.freepik.com</a>
+
+        <p>© Copyright Even Trade</p>
+
+      </footer>
     </div>
+
 
   </div>
-
-
-
-  </section>
-
-  <!-- Features -->
-
-  <section id="features">
-
-    <h3 class="feature-title">Connection</h3>
-    <p>Every member is confirmed to have the skills you need. Take a chance,
-      make fair exchanges and communicate.</p>
-
-    <h3 class="feature-title">Trust</h3>
-    <p>Members are given a satisfactory exchange rating.</p>
-
-    <h3 class="feature-title">Local</h3>
-    <p>Find people in your area who have the expertise you need.</p>
-
-    <h3 class="feature-title">Vetted Professions</h3>
-    <p>Members have access to other profession-approved members.</p>
-
-  </section>
-
-
-  <!-- Service -->
-
-  <section id="service">
-
-    <h2>Connect with people of certain professions and experience around your
-      area.</h2>
-    <img src="images/collab.png" alt="collab" class="collab">
-
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
-
-  </section>
-
-
-  <!-- Press -->
-
-  <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo" class="brand-logo">
-    <img src="images/tnw.png" alt="tnw-logo" class="brand-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo" class="brand-logo">
-    <img src="images/mashable.png" alt="mashable-logo" class="brand-logo">
-
-  </section>
-
-
-  <!-- Pricing -->
-
-  <section id="pricing">
-
-    <h2>Affordable Pricing</h2>
-    <p>Simple and affordable price plans for your exchange</p>
-
-
-    <h3>Citrine Level</h3>
-    <h2>Free</h2>
-    <p>3 Trades Per Day</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Quartz Level</h3>
-    <h2>$15 / mo</h2>
-    <p>Unlimited Trade</p>
-    <p>Unlimited Messages</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Amethyst Level</h3>
-    <h2>$20 / mo</h2>
-    <p>Gold-standard Priority Listing</p>
-    <p>Unlimited Trade</p>
-    <p>Unlimited Messages</p>
-    <button type="button">Sign Up</button>
-
-  </section>
-
-
-  <!-- Call to Action -->
-
-  <section id="cta">
-
-    <h3>Because your talents deserve a fair trade.</h3>
-    <button type="button"></button>
-    <button type="button">Download</button>
-
-  </section>
-
-
-  <!-- Footer -->
-
-  <footer id="footer">
-    <a href="https://www.freepik.com/vectors/team-collaboration"
-      class="credit">Team
-      collaboration vector created by vectorjuice - www.freepik.com</a>
-
-    <p>© Copyright Even Trade</p>
-
-  </footer>
 
   <!-- Bootstrap Scripts -->
   <script
@@ -260,6 +386,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+  <script src="/javascript/main.js"></script>
 </body>
 
 </html>
